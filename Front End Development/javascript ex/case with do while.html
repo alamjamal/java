@@ -1,0 +1,39 @@
+< !DOCTYPE HTML > < html > < head > < meta http - equiv = "content-type"
+content = "text/html" / > < meta name = "author"
+content = "lolkittens" / >
+<!--
+BUG: -->
+< title > Untitled 2 < /title>
+    <script>
+    var cofee=10, tea=5,buiscuit=2;
+    var temp1=0,temp2=0,temp3=0;
+    var number
+    var userChoice="";
+    do{
+    var choice=Number(prompt("what do you want to buy")); 
+    switch(choice){
+        case 1 :  number=Number(prompt("how many cofee do you want to buy"));
+                     temp1 = number*cofee;
+                    break;
+        case 2 : number=Number(prompt("how many tea do you want to buy"));
+                    temp2 = number*tea;
+                    break;
+        case 3 :  number=Number(prompt("how many buiscuit do you want to buy"));
+                  temp3 = number*buiscuit
+                    break;
+        default : alert("enter valid choice");       
+    } 
+    do
+    {
+        userChoice = prompt("Do you want to continue - Yes or No").toUpperCase();
+        if (userChoice != "YES" && userChoice != "NO") {
+            alert("Invalid choice. Please say, Yes or No");
+        }
+    } while (userChoice != "YES" && userChoice != "NO");
+}
+ while (userChoice == "YES");
+ var total=temp1+temp2+temp3;
+ alert("your bill amount is" +total)
+    </script > < /head>
+<body>
+</body > < /html>

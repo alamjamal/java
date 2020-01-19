@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 2</title>
+</head>
+
+<body>
+
+<table>
+    <tr>
+        <td>
+            First Name
+        </td>
+        <td>
+            <input type="text" id="txtFirstName"
+                   onkeyup="validateRequiredField('txtFirstName')"
+                   onblur="validateRequiredField('txtFirstName')"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Last Name
+        </td>
+        <td>
+            <input type="text" id="txtLastName"
+                   onkeyup="validateRequiredField('txtLastName')"
+                   onblur="validateRequiredField('txtLastName')"/>
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+    function validateRequiredField(controlId)
+    {
+        var control = document.getElementById(controlId);
+        control.style.color = 'white';
+        if (control.value == "")
+        {
+            control.style.background = 'red';
+        }
+        else
+        {
+            control.style.background = 'green';
+        }
+    }
+</script>
+
+</body>
+</html>

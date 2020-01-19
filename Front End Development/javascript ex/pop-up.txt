@@ -1,0 +1,30 @@
+<input type="button" value="Open popup" onclick="window.open()" />
+
+Most modern browsers open new tabs instead of separate windows. If you want to open the popup in a new window, one workaround I have found is to specify the URL, name, and features(height and width) parameters. This may not work in all browsers and it also depends on user's browser preferences.
+<input type="button" value="Open popup" onclick="window.open('http://google.com', '_blank', 'height=200,width=200')" />
+
+When name parameter is set to _self, the new window replaces the current window
+<input type="button" value="Open popup"
+       onclick="window.open('http://google.com', '_self')" />
+
+Specify where you want the new popup window to be positioned using top and left features.
+<input type="button" value="Open popup" onclick="window.open('http://google.com', 'My Window', 'height=300,width=300, top=400, left=400')" />
+
+Disable scrollbars and resizing. Works in IE but not in Chrome.
+<input type="button" value="Open popup" onclick="window.open('http://google.com', 'My Window', 'height=300,width=300, scrollbars=no, resizable=no')" />
+
+To close pouup use window.close() method.
+<input type="button" value="Open popup" onclick="openPopup()" />
+<input type="button" value="Close popup" onclick="closePopup()" />
+<script type="text/javascript">
+    var popup;
+    function openPopup()
+    {
+        popup = window.open("http://google.com", "My Window", "height=300,width=300")
+    }
+
+    function closePopup()
+    {
+        popup.close();
+    }
+</script>

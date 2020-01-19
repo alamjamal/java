@@ -1,0 +1,39 @@
+.s2{
+     display:inline-block;
+     text-align: center;
+     margin-top: 40px;
+     padding: 10px;
+     
+    
+}
+.s2 input[type="text"],.s2 input[type="email"]{
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: monospace;
+    font-weight: lighter;
+     border: 2px solid #FF99CC;
+     border-radius: 4px;
+     background-color:#000000;
+     opacity: 0.5;
+      color: #FFFFFF;
+     
+}
+.s2 input[type="button"]{
+     background-color: #FF0000; /* Green */
+    
+    color: white;
+    border-radius: 4px;
+    height: 35px;
+    width: 363px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+   
+}
+.s2 input[type="button"]:hover{
+    color:  #FF99CC;
+}

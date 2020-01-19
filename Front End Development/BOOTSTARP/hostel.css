@@ -1,0 +1,14 @@
+body{
+  margin: 5px;
+}
+.navbar{
+  background-color: #49448F;
+  color: black !important;
+  font-size: 15px !important;
+}
+.navbar-brand{
+  color: white !important;
+}
+.navbar a{
+  color: white !important;
+}

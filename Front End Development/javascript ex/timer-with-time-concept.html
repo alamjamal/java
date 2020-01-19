@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 1</title>
+
+</head>
+
+<body>
+
+<input type="text" id="txtbox" value="10" /><br />
+<input type="button" value="start " onclick="start('txtbox')" />
+<input type="button" value="stop"  onclick="stop()"/>
+
+    <script>
+    var Id;
+    function start(controlId){
+       var control =  document.getElementById(controlId);
+       var second = control.value;
+        second = second - 1;
+        if(second.value==0){
+           control.value="done"  
+           return;
+        }else{
+            control.value=second;
+        }
+          
+          Id = setTimeout(function(){ start("txtbox")},1000)
+    }
+    
+    function stop(){
+        clearTimeout(Id);
+    }
+   
+ 
+    </script>
+</body>
+</html>

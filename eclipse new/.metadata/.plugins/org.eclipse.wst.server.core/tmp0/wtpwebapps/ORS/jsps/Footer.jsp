@@ -1,0 +1,1 @@
+<img src=<%=request.getContextPath()+"/images/footer2.jpg" %> height="60" width="1000">

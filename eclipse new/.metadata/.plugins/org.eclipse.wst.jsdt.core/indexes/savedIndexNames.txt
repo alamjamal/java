@@ -1,0 +1,13 @@
+INDEX VERSION 1.4+C:\Users\alamj\OneDrive\Coding\eclipse new\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1549313113.index
+777462962.index
+504199281.index
+1269016195.index
+3823059371.index
+2489269435.index
+139598098.index
+1313002361.index
+3871471118.index
+4093514190.index
+2616011500.index
+2967529589.index

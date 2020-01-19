@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 1</title>
+    <style type="text/css">
+    .imgStyle{
+        width: 100px;
+        height: 150px;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+
+<body>
+
+<img src="pic/11.jpg" width="420" height="450" style="border:2px solid black;" id="mainImage" />
+<br />
+<div id="myDiv" onclick="changeImage(event)"> <!-- make use of buuble concept instead using event handler for all the 
+images we can handle it from its parent -->
+<img src="pic/11.jpg" class="imgStyle" id="image" />
+<img src="pic/12.jpg" class="imgStyle" id="image" />
+<img src="pic/13.jpg" class="imgStyle" id="image" />
+<img src="pic/14.jpg" class="imgStyle" id="image" />
+</div>
+<br />
+<br />
+<div id="temp"></div>
+<script type="text/javascript">
+ var images = document.getElementById("myDiv")
+                             .getElementsByTagName("img");
+
+        for (var i = 0; i < images.length; i++)
+        {
+            images[i].onmouseover = function ()
+            {
+                this.style.cursor = 'hand';
+                this.style.borderColor = 'red';
+            }
+            images[i].onmouseout = function ()
+            {
+                this.style.cursor = 'pointer';
+                this.style.borderColor = 'grey';
+            }
+        }
+
+    function changeImage(event){
+        event = event || window.event;
+        var targetElement = event.target || event.srcElement;
+        if (targetElement.tagName == "IMG")
+            {
+         document.getElementById("mainImage").src = targetElement.getAttribute("src");
+       }
+       
+      var temp = event.type+ " " +event.clientX+" "+event.clientY;
+        document.getElementById("temp").innerHTML=temp;
+        
+    }
+</script>
+</body>
+</html>

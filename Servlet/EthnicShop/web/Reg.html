@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> hello </title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="loginstyle.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="mybody">
+        <div class="content">
+            <img src="pic/logo.jpg" alt="logo pic" />
+            <form method="POST" action="./Reg" onsubmit="return Validate()" name="vForm">
+                <div>
+                    <input type="text" name="fname" class="textInput" placeholder="First Name">
+                    <div id="name_error" class="val_error">
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="lname" class="textInput" placeholder="Last Name">
+                    <div id="name_error" class="val_error">
+                    </div>
+                </div>
+
+                <div>
+                    <input type="email" name="email" class="textInput" placeholder="Email">
+                    <div id="email_error" class="val_error">
+                    </div>
+                </div>
+                <div>
+                    <input type="password" name="password" class="textInput" placeholder="Password">
+                </div>
+                <div>
+                    <input type="password" name="password_confirmation" class="textInput" placeholder="Re Enter Password">
+                    <div id="password_error" class="val_error">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" class="login" name="register" value="Register">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+<script type="text/javascript">
+
+
+    // GETTING ALL INPUT TEXT FIELDS
+    var fname = document.forms["vForm"]["fname"];
+    var email = document.forms["vForm"]["email"];
+    var password = document.forms["vForm"]["password"];
+    var password_confirmation = document.forms["vForm"]["password_confirmation"];
+
+    // GETTING ALL ERROR OBJECTS
+    var name_error = document.getElementById("name_error");
+    var email_error = document.getElementById("email_error");
+    var password_error = document.getElementById("password_error");
+
+    // SETTING ALL EVENT LISTENERS
+    fname.addEventListener("blur", nameVerify, true);
+    email.addEventListener("blur", emailVerify, true);
+
+    function Validate() {
+        // VALIDATE USERNAME
+        if (fname.value == "") {
+            name_error.textContent = "First Name is required";
+            fname.style.border = "1px solid red";
+            fname.focus();
+            return false;
+        }
+
+        // VALIDATE EMAIL
+        if (email.value == "") {
+            email_error.textContent = "Email is required";
+            email.style.border = "1px solid red";
+            email.focus();
+            return false;
+        }
+
+        // VALIDATE PASSWORD
+        if (password.value != password_confirmation.value) {
+            password_error.textContent = "The two passwords do not match";
+            password.style.border = "1px solid red";
+            password_confirmation.style.border = "1px solid red";
+            password.focus();
+            return false;
+        }
+
+        // PASSWORD REQUIRED
+        if (password.value == "" || password_confirmation.value == "") {
+            password_error.textContent = "Password required";
+            password.style.border = "1px solid red";
+            password_confirmation.style.border = "1px solid red";
+            password.focus();
+            return false;
+        }
+    }
+
+    // ADD EVENT LISTENERS
+    function nameVerify() {
+        if (fname.value != "") {
+            name_error.innerHTML = "";
+            fname.style.border = "1px solid #110E0F";
+            return true;
+        }
+    }
+
+    function emailVerify() {
+        if (email.value != "") {
+            email_error.innerHTML = "";
+            email.style.border = "1px solid #110E0F";
+            return true;
+        }
+    }
+
+
+
+</script>

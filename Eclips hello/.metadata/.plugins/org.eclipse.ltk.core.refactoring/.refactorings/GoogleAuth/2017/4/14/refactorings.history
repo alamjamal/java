@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;google/src/com.sl&apos;&#x0D;&#x0A;- Original project: &apos;GoogleAuth&apos;&#x0D;&#x0A;- Destination element: &apos;google/src/com.sl&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.sl.GlobalCons.java&#x0D;&#x0A;     com.sl.GooglePojo.java&#x0D;&#x0A;     com.sl.GsonUtility.java&#x0D;&#x0A;     com.sl.OAuth2Callback.java&#x0D;&#x0A;     com.sl.Setup.java" description="Copy compilation units" destination="=google/src&lt;com.sl" element1="/src&lt;com.sl{GlobalCons.java" element2="/src&lt;com.sl{GooglePojo.java" element3="/src&lt;com.sl{GsonUtility.java" element4="/src&lt;com.sl{OAuth2Callback.java" element5="/src&lt;com.sl{Setup.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1491642646826" units="5" version="1.0"/>
+</session>

@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 15px;
+	line-height: 32px;
+	color: black;
+	width: 100%;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+h1{
+color: white;}
+a:hover {
+	color: #ffff80;
+}
+
+.header {
+	width: 100%;
+	height: 20vh;
+	background-color: #4D373F;
+	display: block;
+	text-align: center;
+	padding-top: 10px;
+	
+}
+
+
+
+.nav-bar {
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: #278eda;
+}
+.nav-bar ul{
+list-style: none;
+display: block;
+text-align: center;
+}
+.nav-bar ul li{
+display: inline-block;
+text-align: center;
+}
+.nav-bar  a{  
+font-weight:bold;
+    display: block;
+  	text-decoration: none;
+  	line-height: 60px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+	color: white;
+}
+.nav-bar ul li a:hover{
+   background-color: #665AA6;
+   color: #FFFFFF;
+   
+}
+
+.main-bar {
+	margin: auto;
+	width: 80%;
+	height: auto;
+	margin: auto;
+	background-color: #FAF7F7;
+	clear: both;	
+	
+}
+
+.footer {
+	width: 100%;
+	height: 10vh;
+	background-color: #45D190;
+	clear: both;
+}
+.item-sold-by-catagory{
+width: 100%;
+height: 70vh;
+background-color: red;
+margin-top: 20px;
+}
+.item-viewed-by-catagory{
+width: 100%;
+height: 70vh;
+background-color: red;
+margin-top: 20px;
+}
+.top-ten-product-sold{
+width: 100%;
+height: 70vh;
+background-color: red;
+margin-top: 20px;
+}
+.top-ten-product-viewed{
+width: 100%;
+height: 70vh;
+background-color: red;
+margin-top: 20px;
+}

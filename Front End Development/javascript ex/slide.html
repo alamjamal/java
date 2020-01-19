@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>slideshow 1</title>
+</head>
+
+<body>
+<img  src="pic/11.jpg" id="image" style="width: 120px; height: 150px;"/><br />
+<input type="button" value="start slide" onclick="startSlide()"/>
+<input type="button" value="stop slide" onclick="stopSlide()"/><br />
+<div id="demo"></div>
+<script>
+var ID;
+function startSlide(){
+    ID = setInterval(changeImage, 2000);
+}
+function stopSlide(){
+    clearInterval(ID);
+}
+ function changeImage(){
+    var imageSrc = document.getElementById("image").getAttribute("src");
+    var currrentImageNumber = imageSrc.substring(imageSrc.lastIndexOf("/") + 1, imageSrc.lastIndexOf("."));
+    if(currrentImageNumber==14){
+        currrentImageNumber=10;
+    }
+    //document.getElementById("demo").innerHTML= currrentImageNumber;
+    var newImage = "pic/" +(Number(currrentImageNumber)+1)+ ".jpg";   
+    
+     document.getElementById("image").setAttribute("src",newImage);
+    
+ }
+</script>
+</body>
+</html>

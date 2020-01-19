@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+body{
+position:absolute;
+border: 0px;
+height: 100%;
+width: 100%;
+margin: 0px;
+padding: 0px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#headerWrapper, #contentMainWrapper, #logoWrapper, #cartBoxListWrapper, #ezPageBoxList, #cartBoxListWrapper ul, #ezPageBoxList ul, #mainWrapper, #popupAdditionalImage, #popupImage {
+	margin: 0em;
+	padding: 0em;
+	height: 100%;
+	}

@@ -1,0 +1,68 @@
+package com.book.alam;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/NewBookController")
+public class NewBookController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+    public NewBookController() {
+        super();
+       
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String action = request.getParameter("action");
+		if(action!=null){
+			int NBOOKID = Integer.parseInt(request.getParameter("NBOOKID"));
+			String TITLE= request.getParameter("TITLE");
+			String AUTHOR= request.getParameter("AUTHOR");
+			String PUBLISHER= request.getParameter("PUBLISHER");
+			String PUBLISHEDDATE= request.getParameter("PUBLISHEDDATE");
+			String CATEGORY= request.getParameter("CATEGORY");
+			String ISBN= request.getParameter("ISBN");
+			String ISBN13= request.getParameter("ISBN13");
+			String IMAGEAPIPATH= request.getParameter("IMAGEAPIPATH");
+			String DESCRIPTION= request.getParameter("DESCRIPTION");
+			int PAGECOUNT= Integer.parseInt(request.getParameter("PAGECOUNT"));
+			int PRICE= Integer.parseInt(request.getParameter("PRICE"));
+			
+			NewBookPOJO np = new NewBookPOJO();
+			np.setNBOOKID(NBOOKID);
+			np.setTITLE(TITLE);
+			np.setAUTHOR(AUTHOR);
+			np.setPUBLISHER(PUBLISHER);
+			np.setPUBLISHEDDATE(PUBLISHEDDATE);
+			np.setCATEGORY(CATEGORY);
+			np.setISBN(ISBN);
+			np.setISBN13(ISBN13);
+			np.setIMAGEAPIPATH(IMAGEAPIPATH);
+			np.setDESCRIPTION(DESCRIPTION);
+			np.setPAGECOUNT(PAGECOUNT);
+			np.setPRICE(PRICE);
+		
+			int i = NewBookDAO.insertBookDetails(np);
+			if(i>0){
+				System.out.println("inserted");
+				request.getRequestDispatcher("add_product.jsp").forward(request, response);
+			}
+			
+		}
+	}
+
+}

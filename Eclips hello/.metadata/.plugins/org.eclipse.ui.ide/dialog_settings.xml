@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\welcome\OneDrive\My Project\BookWoon"/>
+			<item value="F:\Adv Java\project file\JavaSQL small project"/>
+			<item value="F:\Adv Java\project file\AjaxFileUpload-master\AjaxFileUpload-master\AjaxFileUpload"/>
+			<item value="F:\Adv Java\project file\AjaxCrudjTableSample-master\AjaxCrudjTableSample-master\AjaxCrudjTableSample"/>
+			<item value="F:\Adv Java\project file\EmotionButtons project"/>
+			<item value="F:\Adv Java\Sodhan\EmotionButtons project"/>
+			<item value="C:\Users\welcome\Desktop\demos"/>
+			<item value="C:\Users\welcome\Desktop\erf"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

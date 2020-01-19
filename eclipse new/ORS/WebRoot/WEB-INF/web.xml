@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.ors.util.InitServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/initservlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.ors.action.LoginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>logoutaction</servlet-name>
+  <servlet-class>com.ors.action.LogoutAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>logoutaction</servlet-name>
+ <url-pattern>/logoutaction</url-pattern>
+ </servlet-mapping>
+	
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.ors.action.ChangePasswordAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <url-pattern>/ChangePasswordAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <servlet-class>com.ors.action.RecoverPasswordAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <url-pattern>/RecoverPasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>checkuseraction</servlet-name>
+  <servlet-class>com.ors.action.ChekUserAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>checkuseraction</servlet-name>
+ <url-pattern>/ChekUserAction</url-pattern>
+ </servlet-mapping>
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.ors.action.RegisterAction</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/RegisterAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeptRegisterAction</servlet-name>
+    <servlet-class>com.ors.action.DeptRegisterAction</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DeptRegisterAction</servlet-name>
+    <url-pattern>/DeptRegisterAction</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MailAction</servlet-name>
+    <servlet-class>com.ors.action.MailAction</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>MailAction</servlet-name>
+    <url-pattern>/MailAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteMailAction</servlet-name>
+    <servlet-class>com.ors.action.DeleteMailAction</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DeleteMailAction</servlet-name>
+    <url-pattern>/DeleteMailAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>viewuseraction</servlet-name>
+    <servlet-class>com.ors.action.ViewUserAction</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>viewuseraction</servlet-name>
+    <url-pattern>/viewuseraction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>logindetailsaction</servlet-name>
+    <servlet-class>com.ors.action.LogInDetailsAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logindetailsaction</servlet-name>
+    <url-pattern>/logindetailsaction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddCourseAction</servlet-name>
+    <servlet-class>com.ors.action.AddCourseAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCourseAction</servlet-name>
+    <url-pattern>/AddCourseAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteCourseAction</servlet-name>
+    <servlet-class>com.ors.action.DeleteCourseAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCourseAction</servlet-name>
+    <url-pattern>/DeleteCourseAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SheduleCourseAction</servlet-name>
+    <servlet-class>com.ors.action.SheduleCourseAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SheduleCourseAction</servlet-name>
+    <url-pattern>/SheduleCourseAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteSheduleAction</servlet-name>
+    <servlet-class>com.ors.action.DeleteSheduleAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteSheduleAction</servlet-name>
+    <url-pattern>/DeleteSheduleAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AssignSheduleAction</servlet-name>
+    <servlet-class>com.ors.action.AssignSheduleAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AssignSheduleAction</servlet-name>
+    <url-pattern>/AssignSheduleAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SetRequestAction</servlet-name>
+    <servlet-class>com.ors.action.SetRequestAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetRequestAction</servlet-name>
+    <url-pattern>/SetRequestAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteRequestAction</servlet-name>
+    <servlet-class>com.ors.action.DeleteRequestAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteRequestAction</servlet-name>
+    <url-pattern>/DeleteRequestAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ReplyAction</servlet-name>
+    <servlet-class>com.ors.action.ReplyAction</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EmpRequestAction</servlet-name>
+    <servlet-class>com.ors.action.EmpRequestAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddEmpReqAction</servlet-name>
+    <servlet-class>com.ors.action.AddEmpReqAction</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>ReplyAction</servlet-name>
+    <url-pattern>/ReplyAction</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>EmpRequestAction</servlet-name>
+    <url-pattern>/EmpRequestAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddEmpReqAction</servlet-name>
+    <url-pattern>/AddEmpReqAction</url-pattern>
+  </servlet-mapping>
+	
+  <welcome-file-list>
+    <welcome-file>jsps/Home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<p>Welcome to JavaScript</p>
+<form>
+<div id="alam" style="width: 20px; height: 50px;"></div>
+<input type="text"  id="num1" />
+<label id="a"></label>
+<div id="a"></div>
+<input type="text" id="num2" />
+<div id="b"></div>
+<input type="button" value="add" onclick="return msg()"/>
+<input type="text" id="num3" />
+<div id="c"></div>
+</form>
+<script>
+function msg(){
+    var ret= true;
+    var num1,num2;
+    var num3;
+    if(document.getElementById('num1').value==""){
+       document.getElementById('a').innerText="dont leave empty";
+        ret=false;   
+      document.getElementById("a").focus();
+      return;
+    }
+    else{
+         document.getElementById('a').innerText="";
+          num1 = parseInt(document.getElementById('num1').value);
+    }
+     if(document.getElementById('num2').value==""){
+        document.getElementById('b').innerText="dont leave empty";
+        ret=false;
+        return;
+    }
+    else{
+         document.getElementById('b').innerText="";
+          num2 = parseInt(document.getElementById('num2').value);
+          
+    }
+    
+   
+         num3 = num1 + num2;
+    document.getElementById('num3').value=num3;
+        
+   
+   
+    
+   
+    if(num3%2==0){
+        
+        document.getElementById('c').textContent="even no."
+    }
+    else{
+        
+         document.getElementById('c').textContent="odd no."
+    }
+   
+    
+     return ret;
+}
+</script>
+</body>
+</html>

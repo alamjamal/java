@@ -1,0 +1,25 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+ <title>First jQuery Example</title>  
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+ </script>  
+ <script type="text/javascript">  
+ $(function() {  
+ $("p").css("background-color", "cyan");  
+ $("p:first").css("color","white");
+ $("#demo #pid").css("color","red");
+ $("#demo").css("color","white");
+ }); 
+ </script>  
+ </head>  
+<body>  
+<div id="demo" class="cls">
+<p>The first paragraph is selected.</p>  
+<p id="pid">The second paragraph is selected.</p>  
+<p >The third paragraph is selected.</p>  
+</div>
+<p id="demo">The third paragraph is selected.</p>  
+</body>  
+</html>

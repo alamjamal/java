@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 1</title>
+    <script type="text/javascript">
+  var clicks = ( function (){   
+        var count = 0;
+        return function(){
+             return ++count;
+        }
+       
+    })();
+    </script>
+</head>
+
+<body>
+
+<input type="button"  value="clickme" onclick="alert(clicks());"/>
+
+</body>
+</html>

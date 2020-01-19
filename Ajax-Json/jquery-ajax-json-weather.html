@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script src="jquery-1.11.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnGetWeather').click(function () {
+                var resultElement = $('#resultDiv');
+
+                var requestData = $('#txtCity').val();
+                $.ajax({
+                    url: 'http://getpincodes.info/api.php',
+                    method: 'get',
+                    data: {pincode:requestData},
+                    dataType: 'json',
+                    success: function (response) {
+                        
+                            resultElement.html('Area Name: ' + response[0][0] + '<br/>'
+                                + 'District: ' + response[0][1]);
+                        
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body style="font-family:Arial">
+    <table>
+        <tr>
+            <td>City</td>
+            <td><input type="text" id="txtCity" /></td>
+        </tr>
+    </table>
+    <input type="button" id="btnGetWeather" value="Get Weather Data">
+    <br /><br />
+    <div id="resultDiv">
+    </div>
+</body>
+</html>

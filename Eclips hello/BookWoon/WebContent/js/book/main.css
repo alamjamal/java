@@ -1,0 +1,44 @@
+html {
+  overflow-x: hidden;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/*results display*/
+#results{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*JavaScript created items*/
+.item {
+  height:250px;
+  padding-top:20px;
+  border-bottom:1px solid gray;
+}
+.item img {
+  width: 128px;
+  height: 200px;
+  float: right;
+}
+
+.book-btn{
+	
+	width: 100px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 6px;
+	font-weight: bold;
+	background-color: navy;
+	color: black;
+	border: 2px solid #4CAF50;
+	padding: 5px 10px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	margin-top: 20px;
+}

@@ -1,0 +1,122 @@
+#header {
+    background: url('../img/bg.jpg') no-repeat center center;
+    background-size:cover;
+    overflow:hidden;
+      width:100%;
+      height:20vh;
+}
+#logo{
+    background: url('../img/logo.png') no-repeat;
+   
+    float: left;
+    width: 100px;
+    height: 100px;
+    
+}
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:right;
+	margin:0;
+	padding:4px;
+	
+	
+}
+
+#primary_nav_wrap ul a
+{   font-size:16px;
+	height:40px;
+	display:block;	
+	text-decoration:none;	
+	padding:0 15px;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	
+}
+
+#primary_nav_wrap ul li:hover
+{
+	
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;	
+	padding:0;
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px;
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px;
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%;
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+.s{
+    display: block;
+    text-align: center;
+    margin-top:-60px;
+   
+    
+    
+}
+.search-bar input[type="search"]{
+    width:400px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: monospace;
+    font-weight: lighter;
+     border: 2px solid #FF99CC;
+     border-radius: 4px;
+     background-color:#000000;
+     opacity: 0.7;
+      color: #FFFFFF;
+}
+.search-bar button[type="submit"]{
+     background-color: #FF0000; /* Green */
+    border: 2px solid #FF99CC;
+    color: white;
+    border-radius: 4px;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    line-height: 38px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin:2px 2px;
+    cursor: pointer;
+}
+.search-bar button[type="submit"]:hover{
+    color:  #FF99CC;
+}

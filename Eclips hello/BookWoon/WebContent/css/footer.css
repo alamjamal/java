@@ -1,0 +1,99 @@
+#top-footer{
+    height: 400px;
+    background-color: #362F2F;
+    clear: both;
+}
+/*
+.common{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+} 
+*/
+.common{
+    height: 400px;
+    
+}
+.common ul{
+    list-style: none; 
+    display: inline-block;
+    text-align: center;
+    line-height:20px;
+}
+.common ul li{
+    padding:10px;
+}
+
+.one ul #logo-f{
+    background: url('../img/logo.png') no-repeat center;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+.one i{  
+    
+    font-size: 300%;   
+}
+.one i:hover{  
+    color: #3366FF;
+}
+
+
+.two ul{
+    margin-top: 30px;
+}
+
+
+.two ul li:hover{
+   
+}
+
+
+.three ul{
+    text-transform: uppercase;
+   text-align:left;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+/*end three column footer*/
+
+/* start bottom footer*/
+#bottom-footer{
+    background: #B3AFAD; 
+    height:100px; 
+    clear: both;   
+}
+
+#bf-1{
+    
+    color: #000000;   
+    text-transform: capitalize;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height:40px;
+    
+}
+
+#bf-2 ul{
+    list-style: none;
+    display: block;
+    text-align: center;
+    line-height:30px;
+    
+    
+}
+
+#bf-2 ul li{
+   
+    display: inline-block;
+}
+
+#bf-2 ul a{
+     color: #000000;
+}
+#bf-2 ul a:hover{
+     color: #FFFFFF;
+}

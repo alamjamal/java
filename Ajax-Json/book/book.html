@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- document title -->
+	<title>Google books api</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- custom CSS -->
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row text-center">
+		  <div class="col-sm-12">
+		  	<h1>BOOK FINDER</h1>
+		  	<!-- user input -->
+		    <input id="search" placeholder="Title or Author" autofocus/>
+		    <br><br>
+		    <!-- user submit -->
+			<button id="button" class="btn btn-primary btn-lg btn-block">SEARCH</button>
+		  </div>
+		  <div class="col-sm-21">
+		    <!-- display results -->
+		    <div id="results"></div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="jq.js"></script>
+	<!-- custom JavaScript -->
+	<script src="main.js"></script>
+	<script src="blockui.js"></script>
+	<script>
+		$(document).ready(function() { 
+    $('#button').click(function() { 
+        $.blockUI({ css: { 
+            border: '1px solid white', 
+            padding: '15px', 
+            backgroundColor: '#000', 
+            '-webkit-border-radius': '10px', 
+            '-moz-border-radius': '10px', 
+            opacity: .5, 
+            color: '#fff' 
+        } }); 
+ 
+        setTimeout($.unblockUI, 1000); 
+    }); 
+}); 
+		</script>
+</body>
+</html>

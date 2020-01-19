@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 1</title>
+    
+    <script type="text/javascript">
+    
+ function IsEven(value, index, array)
+{
+    if (value % 2 == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+// Source array
+var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Pass the callback function as argument to the filter method
+var result = myArray.filter(IsEven);
+
+document.write(result);
+    </script>
+    
+</head>
+
+<body>
+
+
+
+</body>
+</html>

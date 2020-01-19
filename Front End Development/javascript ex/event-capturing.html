@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 5</title>
+
+   <style>
+        .divStyle
+        {
+            display: table-cell;
+            border: 5px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+ </style>
+</head>
+<body>
+    <div id="DIV1" class="divStyle">
+        DIV 1
+        <div id="DIV2" class="divStyle">
+            DIV 2
+            <div id="DIV3" class="divStyle">
+                DIV 3
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+     //event capturing just reverse of event bubbling that control goes outer to inner
+        var divElements = document.getElementsByTagName('div');
+
+        for (var i = 0; i < divElements.length; i++)
+        {
+            divElements[i].addEventListener("click", clickHandler, true);
+            //if we put false then then event bubbling will start
+        }
+
+        function clickHandler()
+        {
+            alert(this.getAttribute("id") + " click event handled");
+        }
+    </script>
+
+
+</body>
+</html>

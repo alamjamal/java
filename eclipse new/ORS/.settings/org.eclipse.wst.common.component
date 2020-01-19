@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ORS">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes/" source-path="/ImportedClasses"/>
+        <dependent-module archiveName="activation.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/activation/activation">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ojdbc14.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/ojdbc14/ojdbc14">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.15.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/log4j-1.2.15/log4j-1.2.15">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/mail/mail">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="ORS"/>
+        <property name="java-output-path" value="/ORS/build/classes"/>
+    </wb-module>
+</project-modules>
