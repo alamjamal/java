@@ -1,0 +1,61 @@
+#join-contact{
+    background: url('../img/1.jpg')no-repeat center;
+    background-size:cover;
+    overflow:hidden;
+      width:100%;
+      height:40vh;
+}
+.tc-common1{
+	
+   border-right: 1px solid white;
+   height: 40vh;
+ 	padding-top: 55px;
+}
+  
+#contact{
+
+	display:inline-block;
+	text-align:left;
+}
+.s3{
+   display:inline-block;
+     text-align: center;
+    line-height: 35px;
+    margin-left:250px;
+     margin-top: 30px;
+     
+}
+
+.s3 input[type="text"],.s3 input[type="email"],.s3 textarea{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: monospace;
+    font-weight: lighter;
+     border: 2px solid #FF99CC;
+     border-radius: 4px;
+    
+     background-color:#000000;
+     opacity: 0.5;
+      color: #FFFFFF;
+    
+     
+}
+.s3 input[type="button"]{
+     background-color: #FF0000; /* Green */
+    
+    color: white;
+    border-radius: 4px;
+    height: 35px;
+    width: 163px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+   
+}
+.s3 input[type="button"]:hover{
+    color:  #FF99CC;
+}
